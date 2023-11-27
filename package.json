@@ -1,0 +1,27 @@
+{
+    "name": "medication-reminder-api",
+    "version": "1.0.0",
+    "description": "API for Medication Reminder",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js",
+      "test": "jest",
+      "lint": "eslint .",
+      "lint-fix": "eslint --fix ."
+    },
+    "keywords": ["medication", "reminder", "api", "node", "express"],
+    "author": "Asasi Israel",
+    "license": "MIT",
+    "dependencies": {
+      "express": "^4.17.1",
+      "mongoose": "^5.12.7"
+    
+    },
+    "devDependencies": {
+      "eslint": "^7.29.0",
+      "jest": "^27.0.5",
+      "supertest": "^6.1.6"
+
+    }
+  }
+  

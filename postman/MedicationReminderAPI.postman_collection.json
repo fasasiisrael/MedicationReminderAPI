@@ -1,0 +1,247 @@
+{
+    "info": {
+      "name": "Medication Reminder API",
+      "_postman_id": "unique-postman-uuid",
+      "description": "Collection for Medication Reminder API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Medications",
+        "item": [
+          {
+            "name": "Get All Medications",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/medications",
+                "protocol": "{{protocol}}",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "medications"
+                ]
+              }
+            }
+          },
+          {
+            "name": "Create Medication",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n\t\"name\": \"Medication Name\",\n\t\"dosage\": \"10mg\",\n\t\"frequency\": \"Once daily\"\n}"
+              },
+              "url": {
+                "raw": "{{baseUrl}}/api/medications",
+                "protocol": "{{protocol}}",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "medications"
+                ]
+              }
+            }
+          }
+       
+        ]
+      },
+      {
+        "name": "Users",
+        "item": [
+          {
+            "name": "Get All Users",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/users",
+                "protocol": "{{protocol}}",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "users"
+                ]
+              }
+            }
+          },
+          {
+            "name": "Create User",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n\t\"username\": \"testuser\",\n\t\"email\": \"testuser@example.com\"\n}"
+              },
+              "url": {
+                "raw": "{{baseUrl}}/api/users",
+                "protocol": "{{protocol}}",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "users"
+                ]
+              }
+            }
+          },
+
+        {
+            "name": "Get Medication by ID",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/medications/valid-medication-id",
+                "protocol": "{{protocol}}",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "medications",
+                  "valid-medication-id"
+                ]
+              }
+            }
+          },
+          {
+            "name": "Get Medication by Invalid ID",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/medications/invalid-medication-id",
+                "protocol": "{{protocol}}",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "medications",
+                  "invalid-medication-id"
+                ]
+              }
+            }
+          },
+          {
+            "name": "Update Medication",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n\t\"dosage\": \"20mg\"\n}"
+              },
+              "url": {
+                "raw": "{{baseUrl}}/api/medications/valid-medication-id",
+                "protocol": "{{protocol}}",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "medications",
+                  "valid-medication-id"
+                ]
+              }
+            }
+          },
+          {
+            "name": "Update Medication with Invalid ID",
+            "request": {
+              "method": "PUT",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n\t\"dosage\": \"20mg\"\n}"
+              },
+              "url": {
+                "raw": "{{baseUrl}}/api/medications/invalid-medication-id",
+                "protocol": "{{protocol}}",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "medications",
+                  "invalid-medication-id"
+                ]
+              }
+            }
+          },
+          {
+            "name": "Delete Medication",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/medications/valid-medication-id",
+                "protocol": "{{protocol}}",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "medications",
+                  "valid-medication-id"
+                ]
+              }
+            }
+          },
+          {
+            "name": "Delete Medication with Invalid ID",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "url": {
+                "raw": "{{baseUrl}}/api/medications/invalid-medication-id",
+                "protocol": "{{protocol}}",
+                "host": [
+                  "{{baseUrl}}"
+                ],
+                "path": [
+                  "api",
+                  "medications",
+                  "invalid-medication-id"
+                ]
+              }
+            }
+          }
+
+  
+        ]
+      }
+    ]
+  }
+  
