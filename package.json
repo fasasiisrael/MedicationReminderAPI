@@ -10,7 +10,7 @@
       "lint-fix": "eslint --fix ."
     },
     "keywords": ["medication", "reminder", "api", "node", "express"],
-    "author": "Asasi Israel",
+    "author": "Fasasi Israel",
     "license": "MIT",
     "dependencies": {
       "express": "^4.17.1",
