@@ -9,7 +9,7 @@
       "lint": "eslint .",
       "lint-fix": "eslint --fix ."
     },
-    "keywords": ["medication", "reminder", "api", "node", "express"],
+    "keywords": ["medication", "reminder", "api", "node", "express", "fasasi"],
     "author": "Fasasi Israel",
     "license": "MIT",
     "dependencies": {
