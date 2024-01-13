@@ -1,4 +1,8 @@
-# Medication Reminder API
+---
+coverY: 0
+---
+
+# 🖥 Medication Reminder API
 
 This is a Node.js API for managing medication reminders.
 
@@ -6,19 +10,18 @@ This is a Node.js API for managing medication reminders.
 
 ### Prerequisites
 
-- Node.js (https://nodejs.org/)
-- MongoDB (https://www.mongodb.com/try/download/community)
+* Node.js (https://nodejs.org/)
+* MongoDB (https://www.mongodb.com/try/download/community)
 
 ### Installing
 
-1. Clone the repository:
+1.  Clone the repository:
 
-   ```bash
-   git clone https://github.com/yourusername/medication-reminder-api.git
+    ```bash
+    git clone https://github.com/yourusername/medication-reminder-api.git
+    ```
 
-cd medication-reminder-api
-npm install
-MONGODB_URI=mongodb://localhost:27017/medication-reminder
+cd medication-reminder-api npm install MONGODB\_URI=mongodb://localhost:27017/medication-reminder
 
 npm start
 
